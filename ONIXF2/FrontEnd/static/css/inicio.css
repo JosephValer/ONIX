@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.inicio-container {
+    text-align: center;
+}
+
+.carrusel {
+    width: 60%; /* Ancho del carrusel */
+    margin: 20px auto;
+    border: 2px solid #ff2a2a; /* Borde rojo para contraste */
+    border-radius: 10px;
+    overflow: hidden; /* Para que las imágenes no se salgan */
+}
+
+.oferta {
+    display: none; /* Ocultar inicialmente */
+}
+
+.oferta img {
+    width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    max-height: 300px; /* Ajustar altura máxima de las imágenes */
+    object-fit: cover; /* Mantener la relación de aspecto y recortar si es necesario */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff2a2a; /* Color rojo para el título */
+}
+
+.bungee-tint-regular {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  

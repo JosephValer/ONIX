@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="avatar">
+            <img src="{{ url_for('static', filename='img/usuario.png') }}" alt="Avatar">
+        </div>
+        <h2>Inicio de sesión</h2>
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+            <a href="/registrar" style="color: #fff; display: block; margin-top: 10px;">¿No tienes una cuenta? Crear cuenta</a>
+        </form>
+    </div>
+</body>
+</html>
